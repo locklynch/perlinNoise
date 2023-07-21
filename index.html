@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Noisiest of Perlie Bois!</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make sure the body covers the full viewport height */
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Set the text color to white */
+        }
+        header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #800080; /* Set the header text color to purple */
+        }
+        canvas {
+            display: block; /* To remove extra space around the canvas */
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+    <header>Noisiest of Perlie Bois!</header>
+    <canvas id="gridCanvas"></canvas>
+    <script src="perlinNoise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplex-noise@4.0.1/dist/simplex-noise.js"></script>
+</body>
+</html>
